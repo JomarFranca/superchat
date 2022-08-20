@@ -12,6 +12,12 @@ body {
     font-size: 16px;
     line-height: 1.5;
     color: #545454;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    border-bottom: 1px solid #aaaaaa;
 }
 
 header {
@@ -41,6 +47,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .input-icons input,
@@ -48,4 +55,25 @@ header {
     padding: 8px 16px;
     border: 1px solid #aaaaaa;
     border-radius: 3px;
+}
+
+.miolo {
+    width: 95%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: aqua;
+    border-radius: 5px;
+    border: 1px solid #aaaaaa;
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 1fr 2fr;
+}
+
+.miolo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: #545454;
 }
