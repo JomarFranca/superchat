@@ -20,13 +20,13 @@ section {
     border-bottom: 1px solid #aea9fe;
 }
 
-header {
+.header-chat {
     display: flex;
     flex-direction: column;
 }
 
 .header-icons {
-    padding: 10px;
+    padding: 0.6rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,35 +34,53 @@ header {
 
 .img-icons {
     display: flex;
-    gap: 12px;
+    gap: 0.8rem;
 }
 
 .imagem {
-    width: 20px;
-    height: 20px;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
 }
 
 .input-icons {
-    padding: 0px 10px;
+    padding: 0px 0.6rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 1.3rem;
 }
 
-.input-icons input,
-.input-icons select {
-    padding: 8px 16px;
+div .search {
     border: 1px solid #aea9fe;
-    border-radius: 3px;
+    border-radius: 5px;
+    display: flex;
+    padding: 0.3rem;
 }
 
-.miolo {
+.search input,
+.search button {
+    border: none;
+}
+
+.search-img {
+    width: 1.3rem;
+    cursor: pointer;
+}
+
+.input-icons select {
+    padding: 0.5rem 1.2rem;
+    border: 1px solid #aea9fe;
+    border-radius: 5px;
+    line-height: 2;
+}
+
+.chat {
     width: 95%;
-    margin-top: 20px;
+    margin-top: 1.3rem;
     margin-left: auto;
     margin-right: auto;
-    padding: 15px;
+    padding: 0.8rem;
     background-color: #f8f9fa;
     border-radius: 5px;
     border: 1px solid #aea9fe;
@@ -72,32 +90,31 @@ header {
     grid-template-columns: 1fr 2fr;
 }
 
-.miolo:hover {
+.chat:hover {
     background-color: #665dfe;
     color: #fff;
 }
 
-.miolo img {
+.profile {
+    width: 100%;
     padding: 5px;
     border-radius: 50px;
-}
-
-.perfil {
+    border: 2px solid #fff;
     grid-row: 1/3;
 }
 
-.pessoa {
+.people {
     display: flex;
     justify-content: space-between;
     font-size: 1rem;
 }
 
-.pessoa span {
+.people span {
     font-weight: 300;
     color: #38e615;
 }
 
-.texto {
+.text {
     font-size: 1rem;
     grid-column: 2/3;
 }
