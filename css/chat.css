@@ -96,6 +96,7 @@ main header {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    gap: 0.3rem;
     position: fixed;
     left: 0px;
     right: 0px;
