@@ -35,7 +35,8 @@
 }
 
 @media (min-width: 350px) {
-    .header-icons-2 {
+    .header-icons-2,
+    .header-icons-1 {
         visibility: hidden;
     }
 }
