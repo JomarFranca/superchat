@@ -55,18 +55,6 @@ body {
     display: none;
 }
 
-@media (min-width: 350px) {
-    #chat {
-        display: block;
-        min-width: 350px;
-    }
-
-    .header-conversation,
-    .conversation-chat {
-        border-right: 1px solid #aea9fe;
-    }
-}
-
 /* header Conversation */
 
 .conversation-content {
@@ -85,6 +73,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.list-image-square {
+    position: relative;
+    padding: 10px;
+    line-height: 1.5;
+    background-color: #38e615;
+    list-style-type: none;
 }
 
 .conversation-img-icons {
@@ -203,4 +199,16 @@ div .search {
     color: red;
     font-size: 16px;
     font-weight: bold;
+}
+
+@media (min-width: 350px) {
+    #chat {
+        display: block;
+        min-width: 350px;
+    }
+
+    .header-conversation,
+    .conversation-chat {
+        border-right: 1px solid #aea9fe;
+    }
 }
