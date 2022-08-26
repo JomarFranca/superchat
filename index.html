@@ -11,22 +11,26 @@
     <title>Document</title>
 </head>
 
+
+
 <body>
+
+    <!-- ~~~~~~~~~~~~~~~~ header fix ~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <header class="header-fix">
+        <div class="header-fix-content">
+            <img src="./images/users-1.svg" alt="User Log">
+            <h4>Bonnie Torres</h4>
+            <div class="logout">
+                <img src="./images/logout.svg" alt="logout">
+                <p>Logout</p>
+            </div>
+        </div>
+    </header>
 
     <!-- ~~~~~~~~~~~~~~~~ O arquivo conversation.slim ~~~~~~~~~~~~~~~~~~~~~ -->
 
-    <div>
-        <!-- header fixed -->
-        <header class="header-fix">
-            <div class="header-fix-content">
-                <img src="./images/users-1.svg" alt="User Log">
-                <h4>Bonnie Torres</h4>
-                <div class="logout">
-                    <img src="./images/logout.svg" alt="logout">
-                    <p>Logout</p>
-                </div>
-            </div>
-        </header>
+    <div class="conversation-content">
 
         <!-- conversation header -->
         <section class="header-conversation">
@@ -129,7 +133,7 @@
 
     <!-- ~~~~~~~~~~~~~~~~ O arquivo chat.slim ~~~~~~~~~~~~~~~~~~~~~ -->
 
-    <div class="chat-content">
+    <div id="chat" class="chat-content">
 
         <!-- chat header -->
         <section class="header-chat">
@@ -184,7 +188,7 @@
 
 
     <!-- conversation footer -->
-    <footer class="conversation-footer">
+    <footer class="footer">
         <img class="footer-icon-conversation" src="./images/chat.svg" alt="Chat Conversation">
         <img class="footer-icon-conversation" src="./images/phone.svg" alt="Phone">
         <img class="footer-icon-conversation" src="./images/people-speak.svg" alt="People Speak">

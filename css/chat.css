@@ -5,23 +5,8 @@
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-body {
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #fff;
-    color: #545454;
-}
-
-/* #chat {
-    display: flex;
-    flex-direction: column;
-} */
-
-main header {
-    border-bottom: 1px solid #aea9fe;
-}
-
 .header-chat {
+    border-bottom: 1px solid #aea9fe;
     margin: 0px 10px;
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
@@ -102,7 +87,7 @@ main header {
     align-items: center;
     justify-content: space-around;
     gap: 0.3rem;
-    position: relative;
+    position: fixed;
     left: 0px;
     right: 0px;
     bottom: 0px;
