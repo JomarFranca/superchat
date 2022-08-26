@@ -59,17 +59,23 @@ body {
     #chat {
         display: block;
     }
+
+    .header-conversation,
+    .conversation-chat {
+        border-right: 1px solid #aea9fe;
+    }
 }
 
 /* header Conversation */
 
 .conversation-content {
     max-width: 350px;
+    min-width: 350px;
     position: relative;
     top: 75px;
 }
 
-section {
+.header-conversation {
     border-bottom: 1px solid #aea9fe;
 }
 
@@ -140,7 +146,6 @@ div .search {
     display: grid;
     gap: 0.5rem;
     grid-template-columns: 1fr 4fr;
-    overflow: hidden;
 }
 
 .conversation:hover {
@@ -173,9 +178,10 @@ div .search {
 }
 
 .footer {
+    max-width: 350px;
     height: 3.5rem;
     background-color: #665dfe;
-    padding: 10px;
+    padding: 10px 0px;
     display: flex;
     justify-content: space-around;
     position: fixed;

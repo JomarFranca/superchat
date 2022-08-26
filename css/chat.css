@@ -5,6 +5,11 @@
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+.chat-content {
+    position: relative;
+    top: 75px;
+}
+
 .header-chat {
     border-bottom: 1px solid #aea9fe;
     margin: 0px 10px;
