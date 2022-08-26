@@ -58,6 +58,7 @@ body {
 @media (min-width: 350px) {
     #chat {
         display: block;
+        min-width: 350px;
     }
 
     .header-conversation,
@@ -176,6 +177,8 @@ div .search {
     font-size: 1rem;
     grid-column: 2/3;
 }
+
+/* Footer Conversation */
 
 .footer {
     max-width: 350px;

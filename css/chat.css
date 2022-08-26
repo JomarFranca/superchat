@@ -34,6 +34,12 @@
     justify-items: center;
 }
 
+@media (min-width: 350px) {
+    .header-icons-2 {
+        visibility: hidden;
+    }
+}
+
 #profile-1 {
     width: 95%;
     margin-top: 1rem;
@@ -85,6 +91,7 @@
 }
 
 .chat-footer {
+    min-width: 350px;
     border-top: 1px solid #aea9fe;
     height: 4rem;
     padding: 10px;
@@ -93,7 +100,7 @@
     justify-content: space-around;
     gap: 0.3rem;
     position: fixed;
-    left: 0px;
+    left: 350px;
     right: 0px;
     bottom: 0px;
 }
