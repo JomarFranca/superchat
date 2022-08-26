@@ -6,12 +6,61 @@
 }
 
 body {
-    max-width: 350px;
     margin-left: auto;
     margin-right: auto;
     background-color: #fff;
     color: #545454;
+    display: flex;
+    align-items: flex-start;
 }
+
+#chat {
+    display: none;
+}
+
+@media (min-width: 350px) and (max-width: 700px) {
+    #chat {
+        display: block;
+    }
+}
+
+/* Header */
+
+.header-fix {
+    background-color: #665dfe;
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; */
+}
+
+.header-fix div {
+    color: #fff;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-fix img {
+    width: 50px;
+    border-radius: 25px;
+}
+
+.header-fix-content div {
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.logout img {
+    padding: 5px;
+    width: 40px;
+}
+
+/* Content Conversation */
 
 section {
     border-bottom: 1px solid #aea9fe;
@@ -82,6 +131,7 @@ div .search {
     display: grid;
     gap: 0.5rem;
     grid-template-columns: 1fr 4fr;
+    overflow: hidden;
 }
 
 .conversation:hover {
@@ -113,7 +163,7 @@ div .search {
     grid-column: 2/3;
 }
 
-.conversation-footer {
+footer.footer {
     height: 3.5rem;
     background-color: #665dfe;
     padding: 10px;
@@ -125,7 +175,17 @@ div .search {
     bottom: 0px;
 }
 
+.conversation-footer {
+}
+
 .footer-icon-conversation {
     width: 1.4rem;
     cursor: pointer;
+}
+
+/* @todo refactor move to a more approprieted css file */
+.toast-error .toast-message {
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
 }
