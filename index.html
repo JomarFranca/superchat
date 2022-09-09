@@ -38,10 +38,11 @@
                 <div class="header-icons">
                     <h2>Chats</h2>
                     <div class="conversation-img-icons">
-                        <img class="conversation-imagem" src="./images/bell.svg" alt="bell">
-
+                        <div id="btn-bell">
+                            <img alt="bell" class="conversation-imagem" src="./images/bell.svg" />
+                        </div>
                         <div id="btn-square">
-                            <img class="conversation-imagem" src="./images/apps.svg" alt="square">
+                            <img alt="square" class="conversation-imagem" src="./images/apps.svg" />
                             <div class="list-image-square">
                                 <ul>
                                     <li>notes</li>
@@ -51,8 +52,17 @@
                                 </ul>
                             </div>
                         </div>
-
-                        <img class="conversation-imagem" src="./images/more.svg" alt="more">
+                        <div id="btn-more">
+                            <img alt="more" class="conversation-imagem" src="./images/more.svg" />
+                            <div class="list-image-more">
+                                <ul>
+                                    <li>notes1</li>
+                                    <li>settings2</li>
+                                    <li>to-do2</li>
+                                    <li>translation3</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="conversation-input-icons">
@@ -188,9 +198,10 @@
         <section class="footer-text">
             <div class="chat-footer">
                 <img alt="added" src="./images/circle-add.svg" />
-                <input class="input-footer" placeholder="Type your message here..." />
+                <input id="input-footer" class="input-footer" value="Text here..."
+                    placeholder="Type your message here..." />
                 <img alt="emoticon" src="./images/emoticon-icon.svg" />
-                <button class="btn" type="submit">
+                <button class="btn" type="submit" onclick="Send()">
                     <img alt="" src="./images/arrow-send.svg" />
                 </button>
             </div>

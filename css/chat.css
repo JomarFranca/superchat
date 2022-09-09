@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .chat-content {
+    overflow-y: scroll;
     position: relative;
-    top: 75px;
 }
 
 .header-chat {
@@ -46,7 +48,7 @@
     margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
-    padding: 1rem 3rem;
+    padding: 1rem;
     line-height: 1.5;
     background-color: #eee;
     color: #9296b1;
@@ -65,7 +67,7 @@
     margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
-    padding: 1rem 3rem;
+    padding: 1rem;
     line-height: 1.5;
     background-color: #665dfe;
     color: #eee;
@@ -84,7 +86,7 @@
 }
 
 .profile-img {
-    width: 100%;
+    width: 80px;
     min-width: 50px;
     padding: 5px;
     border-radius: 50px;
@@ -100,7 +102,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 0.3rem;
+    gap: 1rem;
     position: fixed;
     left: 350px;
     right: 0px;
@@ -124,10 +126,12 @@ div .btn {
 }
 
 .input-footer {
+    background-color: #aea9fe;
     padding: 0.8rem;
     border: none;
     border-radius: 0.5rem;
     outline-style: none;
+    flex: 1 1 auto;
 }
 
 .btn {
