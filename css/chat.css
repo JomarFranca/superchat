@@ -1,7 +1,4 @@
 .chat-content {
-    overflow-y: auto;
-    height: 100vh;
-    position: relative;
 }
 
 .header-chat {
@@ -28,18 +25,28 @@
     justify-items: center;
 }
 
+.content-chat {
+    overflow-y: auto;
+    height: 100vh;
+    position: relative;
+}
+
 #profile-1 {
-    width: 95%;
-    margin-top: 1rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 1rem 1rem;
     padding: 1rem;
     line-height: 1.5;
     background-color: #eee;
     color: #9296b1;
     border-radius: 1rem;
-    display: grid;
-    grid-template-columns: 1fr 5fr;
+    display: flex;
+    align-items: flex-start;
+}
+
+#profile-1 div {
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 #profile-1 p,
@@ -47,18 +54,22 @@
     margin-left: 0.5rem;
 }
 
+#profile-1 span,
+#profile-2 span {
+    font-style: italic;
+    font-weight: 300;
+}
+
 #profile-2 {
-    width: 95%;
-    margin-top: 1rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 1rem 1rem;
     padding: 1rem;
     line-height: 1.5;
     background-color: #665dfe;
     color: #eee;
     border-radius: 1rem;
-    display: grid;
-    grid-template-columns: 5fr 1fr;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row-reverse;
 }
 
 #profile-2 p,
@@ -71,11 +82,8 @@
 }
 
 .profile-img {
-    width: 80px;
-    min-width: 50px;
-    padding: 5px;
+    width: 60px;
     border-radius: 50px;
-    grid-row: 1/3;
 }
 
 .chat-footer {
