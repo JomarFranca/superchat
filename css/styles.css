@@ -17,13 +17,6 @@ body {
     background-color: #fff;
     color: #545454;
     overflow: hidden;
-}
-
-#chat {
-    display: none;
-}
-
-main {
     display: flex;
 }
 

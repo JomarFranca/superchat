@@ -1,5 +1,6 @@
 .chat-content {
-    overflow-y: scroll;
+    overflow-y: auto;
+    height: 100vh;
     position: relative;
 }
 
@@ -25,18 +26,6 @@
     grid-row: 1/3;
     align-items: center;
     justify-items: center;
-}
-
-@media (min-width: 350px) {
-    #chat {
-        display: block;
-        min-width: 350px;
-    }
-
-    .header-icons-2,
-    .header-icons-1 {
-        visibility: hidden;
-    }
 }
 
 #profile-1 {
@@ -121,6 +110,12 @@ div .btn {
     width: 1.5rem;
 }
 
+.btn {
+    width: 100px;
+    border-radius: 50px;
+    background-color: #665dfe;
+}
+
 .input-footer {
     background-color: #aea9fe;
     padding: 0.8rem;
@@ -130,8 +125,14 @@ div .btn {
     flex: 1 1 auto;
 }
 
-.btn {
-    width: 100px;
-    border-radius: 50px;
-    background-color: #665dfe;
+@media (min-width: 350px) {
+    #chat {
+        display: block;
+        min-width: 350px;
+    }
+
+    .header-icons-2,
+    .header-icons-1 {
+        visibility: hidden;
+    }
 }

@@ -110,7 +110,7 @@ div .search {
 }
 
 .conversation-chat {
-    overflow-y: scroll;
+    overflow-y: auto;
     height: 100vh;
 }
 
